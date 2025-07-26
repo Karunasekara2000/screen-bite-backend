@@ -15,7 +15,6 @@ public class FoodController {
 
     private final FoodService foodService;
 
-
     @GetMapping()
     public ResponseEntity<List<Food>> getAllFoodInfo(){
 
