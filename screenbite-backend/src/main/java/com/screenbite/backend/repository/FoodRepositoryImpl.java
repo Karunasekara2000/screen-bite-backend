@@ -27,7 +27,7 @@ public class FoodRepositoryImpl implements FoodRepository{
     public List<Food> getFoodDetails(String category) {
 
         StringBuilder query = new StringBuilder("SELECT id,name,category, " +
-                "price, image_url, description FROM food_menu ");
+                "price, image_url, description FROM food_menu WHERE category = :category");
 
         MapSqlParameterSource param = new MapSqlParameterSource();
 
