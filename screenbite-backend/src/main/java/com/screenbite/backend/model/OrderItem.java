@@ -17,7 +17,8 @@ public class OrderItem {
 
     private int id;
     private int customerId;
-    private String Category;
+    private String category;
     private String name;
     private double itemPrice;
+    private double totalPrice;
 }
