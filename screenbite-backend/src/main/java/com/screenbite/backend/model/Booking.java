@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -22,7 +21,9 @@ public class Booking {
     private int customerId;
     private String tableId;
     private int movieId;
-    private Date date;
+    private java.sql.Date date;
+    private String day;
+    private String showTime;
     private List<OrderItem> orderItem;
     private boolean prepaid;
     private String paymentMethod;
